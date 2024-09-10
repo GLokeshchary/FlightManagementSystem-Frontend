@@ -1,0 +1,54 @@
+
+.appname{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+.appname .appname-left{
+    display: flex;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.appname-left img{
+    height: 60px;
+    border-radius: 50%;
+}
+.app-name-header{
+    color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: 800;
+}
+.appname-right{
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+.appname-right .logintab{
+    display: flex;
+    gap: 10px;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .appname {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .appname .appname-left {
+        margin-bottom: 15px;
+    }
+
+    .appname-right {
+        margin-top: 15px;
+    }
+}

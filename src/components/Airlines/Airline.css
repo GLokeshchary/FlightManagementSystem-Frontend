@@ -1,0 +1,38 @@
+.airlineContainer {
+    width: 100%;
+  }
+  
+  /* Styles for .al-links */
+  .airlineContainer .al-links {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    gap: 15px;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  /* Styles for .al-link1 */
+  .airlineContainer .al-links .al-link1 {
+    padding: 7px;
+    text-align: center;
+    transition: 0.5s;
+  }
+  
+  /* Hover styles for .al-link1 */
+  .airlineContainer .al-links .al-link1:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .airlineContainer .al-links {
+      flex-direction: row; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items vertically */
+      justify-content: center;
+    }
+    
+    /* You can add more styles for smaller screens as needed */
+  }

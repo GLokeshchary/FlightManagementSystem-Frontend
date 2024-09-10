@@ -1,0 +1,48 @@
+.saveAirlinecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: 
+              url("https://images.unsplash.com/photo-1550114851-a8086e230bb8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE0fHxhaXJsaW5lfGVufDB8fDB8fHww") 
+              right/contain no-repeat;
+  }
+  
+  .airlineForm-container {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 20px;
+  }
+  
+  /* Style for form elements */
+ .airlineSubmit button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    padding: 10px;
+    border: none;
+    font-weight: bolder;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .airlineSubmit button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+  .saveAirlinecontainer {
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;    
+  }
+
+  .airlineForm-container {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}

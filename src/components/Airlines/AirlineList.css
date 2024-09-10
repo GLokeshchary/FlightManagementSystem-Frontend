@@ -1,0 +1,59 @@
+.list-container {
+    height: fit-content;
+    overflow-x: auto;
+  }
+  
+  /* Style for the table */
+  .airlineTable {
+    
+  }
+  
+  .airlineTable table {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+  
+  .airlineTable th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  /* Style for the table header */
+  .airlineTable th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for the table body */
+  .airlineTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .airlineTable .websitelink{
+    text-decoration: underline;
+    color: palevioletred;
+  }
+  
+  /* Style for the images in the table */
+  .airlineTable img {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .airlineTable table {
+      overflow-x: auto;
+      border-collapse: collapse;
+    }
+    .airlineTable th, td {
+      font-size: 14px;
+    }
+  
+    .airlineTable img {
+      max-width: 30px;
+    }
+  }

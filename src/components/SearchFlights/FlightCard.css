@@ -1,0 +1,65 @@
+.bookpanel-container{
+    width: inherit;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bookpanel-container .name-logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+.bookpanel-container .name-logo img{
+    height: 40px;
+}
+.bookpanel-container .TimeAndPlace{
+    display: flex;
+    flex-direction: column;
+}
+.bookpanel-container .duration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bookpanel-container .duration span{
+    font-size: 12px;
+    color: gray;
+}
+.bookpanel-container .pricefare{
+    display: flex;
+    flex-direction: column;
+}
+.bookpanel-container .TimeAndPlace .TimeBold{
+    font-weight: bold;
+    font-size: 20px;
+}
+.smallsize{
+    font-size: 15px;
+}
+.bookpanel-container .pricefare .uprice{
+    text-decoration: line-through;
+    color: red;
+    font-size: 15px;
+}
+.bookpanel-container .pricefare .dprice{
+    color: #05023c;
+    font-weight: bold;
+    font-size: 18px;
+}
+.bookpanel-container .booknow{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.bookpanel-container .booknow button{
+    background-color: #05023c;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}

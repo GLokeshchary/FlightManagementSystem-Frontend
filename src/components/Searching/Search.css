@@ -1,0 +1,145 @@
+.search-container{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 25px;
+}
+.search-container .search-heading{
+    font-size: 25px;
+    padding: 15px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.search-container .formContainer{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    justify-content: center;
+}
+.search-container .fieldInput{
+    width: 200px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: white;
+}
+.search-container .formContainer .fieldInput input{
+    width: inherit;
+    height: 35px;
+    border: none;
+    font-family: inherit;
+    border-bottom: 2px solid gray;
+}
+.search-container .icon{
+    position: absolute;
+    left: 402px;
+    top: 40px;
+    z-index: 1;
+}
+.search-container .swapicon{
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid gray;
+    border-radius: 50%;
+}
+.search-container .fieldInput .DropDown{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: fit-content;
+    background-color: white;
+    z-index: 2;
+}
+.search-container .fieldInput .DropDown .item{
+    display: flex;
+    gap: 10px;
+    padding: 6px;
+    cursor: pointer;
+}
+.DropDown .item .item-icon{
+    font-size: 30px;
+}
+.fieldInput .TC{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.fieldInput .TCDropDown{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+.fieldInput .TC .increase{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.fieldInput .TC button{
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+.formContainer .searchButton{
+    background-color: rgb(66, 144, 213);
+    width: 120px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formContainer .searchButton button{
+    font-size: 20px;
+    border: none;
+    background-color: rgb(66, 144, 213);
+    color: var(--secondary-color);
+}
+.formContainer .searchButton button:disabled{
+    cursor: not-allowed;
+}
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .search-container .formContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .search-container .fieldInput .DropDown{
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .search-container .fieldInput {
+      width: 100%;
+    }
+  
+    .search-container .searchButton {
+     width: 100%;
+    }
+    .search-container .icon{
+        position: absolute;
+        left: 40%;
+        top: 92px;
+        transform: rotate(90deg);
+    }
+    .search-container .swapicon{
+        font-size: 25px;
+    }
+  }
